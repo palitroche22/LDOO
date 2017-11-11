@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>practica3</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form id="aa" action="Registro" method="post">
+            <h1>Registro</h1>
+            <br>
+            <br>
+            Nombre de usuario: 
+            <input name="user" type="text" placeholder="Usuario...">
+            <br> Contraseña: 
+            <input name="pwd" type="password" placeholder="Password...">
+            <br>
+             Direccion de correo: 
+            <input name="mail" type="text" placeholder="Correo...">
+            <br>
+             Mes de nacimiento: 
+             <select name="mes">
+                 <option value="Enero">Enero</option>
+                 <option value="Febrero">Febrero</option>
+                 <option selected="selected" value="Marzo">Marzo</option>
+                 <option value="Abril">Abril</option>
+                 <option value="Mayo">Mayo</option>
+                 <option value="Junio">Junio</option>
+                 <option value="Julio">Julio</option>
+                 <option value="Agosto">Agosto</option>
+                 <option value="Septiembre">Septiembre</option>
+                 <option value="Octubre">Octubre</option>
+                 <option value="Noviembre">Noviembre</option>
+                 <option value="Diciembre">Diciembre</option>
+                 
+             </select>
+             <br>
+             Sexo: 
+             <input name="gender" type="radio" value="Masculino">Masculino  
+             <input name="gender" type="radio" value="Femenino">Femenino
+             <br>
+             Soy mayor de Edad: <input name="mayor" type="checkbox">
+             <br>
+             Acerca de mi: 
+             <textarea name="texto" rows="5">
+             </textarea>
+            <br>
+            <br>
+            <input type="button" value="Borrar" onclick="Limpiar()">
+            <script>
+                function Limpiar(){
+                    document.getElementById("aa").reset();
+                }
+                </script>
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>
