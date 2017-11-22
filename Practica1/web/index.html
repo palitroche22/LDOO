@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+	<head>
+			<script>
+				function concatenar(){
+
+				var nom = document.getElementById("name").value;
+				var apPat = document.getElementById("apPat").value;
+				var apMat = document.getElementById("apMat").value;
+			
+				var str= nom + " " + apPat + " " + apMat;
+			
+				document.getElementById("str").innerHTML = str;
+			}
+
+		</script>
+	</head>
+
+
+		<body>
+			
+		<div>
+			<h2>Captura de Datos</h2>
+			<label> Nombre: </label> <input type="text" id="name" /><br><br>
+			<label> Apellido Paterno: </label> <input type="text" id="apPat" /><br><br>
+			<label> Apellido Materno: </label> <input type="text" id="apMat" /><br><br>
+			
+			<input type="submit" value="Enviar" onclick="concatenar()" />
+			
+			<br>
+			
+			<h2> Resultado </h2><br>
+			 Tu nombre es:<label id="str"> </label>
+		</div>
+		</body>
+
+</html>
